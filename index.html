@@ -5,15 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>A Basic HTML5 Template</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
-
-  <meta property="og:title" content="A Basic HTML5 Template">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
-  <meta property="og:image" content="image.png">
+  <title>Billboard Top 10 Albums</title>
 
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -25,8 +17,20 @@
 
 <body>
   <!-- your content here... -->
+  <div class = 'header'>
+    <h3> Billboard Top 10 Albumbs</h3>
+    <p> Click any title to see the album art and learn more</P>
+  <div>
+
+  </div>
+
+  </div>
   <div class='half-width'>
-    <div id='adele' class='artist-container'>
+    <!-- Each album has data for album cover, year, # weeks @ #1 -->
+    <div id='adele' class='artist-container'
+    data-album-art = 'https://m.media-amazon.com/images/I/71Ln3JLWyOL._SL1500_.jpg'
+    data-year = '2011'
+    data-peak = '#1 for 24 weeks'>
       <div class='artist-name'>
         Adele
       </div>
@@ -34,7 +38,10 @@
         21
       </div>
     </div>
-    <div id='sound_of_music' class='artist-container'>
+    <div id='sound_of_music' class='artist-container'
+    data-album-art = 'https://upload.wikimedia.org/wikipedia/en/7/7a/The-Sound-of-Music-CD.jpg'
+    data-year = '1965'
+    data-peak = '#1 for 2 weeks'>
       <div class='artist-name'>
         Soundtrack
       </div>
@@ -42,7 +49,10 @@
         The Sound of Music
       </div>
     </div>
-    <div id='michael_jackson' class='artist-container'>
+    <div id='michael_jackson' class='artist-container'
+    data-album-art = 'https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png'
+    data-year = '1982'
+    data-peak = '#1 for 37 weeks'>
       <div class='artist-name'>
         Michael Jackson
       </div>
@@ -50,7 +60,10 @@
         Thriller
       </div>
     </div>
-    <div id='tay' class='artist-container'>
+    <div id='tay' class='artist-container'
+    data-album-art = 'https://upload.wikimedia.org/wikipedia/en/8/86/Taylor_Swift_-_Fearless.png'
+    data-year = '2008'
+    data-peak = '#1 for 11 weeks'>
       <div class='artist-name'>
         Taylor Swift
       </div>
@@ -58,7 +71,10 @@
         Fearless
       </div>
     </div>
-    <div id='bruce_springsteen' class='artist-container'>
+    <div id='bruce_springsteen' class='artist-container'
+    data-album-art = 'https://m.media-amazon.com/images/I/819qdTNLMxL._SL1500_.jpg'
+    data-year = '1984'
+    data-peak = '#1 for 7 weeks'>
       <div class='artist-name'>
         Bruce Springsteen
       </div>
@@ -66,7 +82,10 @@
         Born in The U.S.A.
       </div>
     </div>
-    <div id='garth_brooks' class='artist-container'>
+    <div id='garth_brooks' class='artist-container'
+    data-album-art = 'https://upload.wikimedia.org/wikipedia/en/5/5a/Garth_Brooks-Ropin%27_the_Wind_%28album_cover%29.jpg'
+    data-year = '1991'
+    data-peak = '#1 for 18 weeks'>
       <div class='artist-name'>
         Garth Brooks
       </div>
@@ -74,7 +93,10 @@
         Ropin' The Wind
       </div>
     </div>
-    <div id='alanis_morissette' class='artist-container'>
+    <div id='alanis_morissette' class='artist-container'
+    data-album-art = 'https://m.media-amazon.com/images/I/81UsU658UVL._SL1425_.jpg'
+    data-year = '1995'
+    data-peak = '#1 for 12 weeks'>
       <div class='artist-name'>
         Alanis Morissette
       </div>
@@ -82,7 +104,10 @@
         Jagged Little Pill
       </div>
     </div>
-    <div id='doctor_zhivago' class='artist-container'>
+    <div id='doctor_zhivago' class='artist-container'
+    data-album-art = 'https://img.discogs.com/LBD-0mYc4ZQQofKqlqaK9GTJxBI=/fit-in/600x586/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-6633676-1475849958-5055.jpeg.jpg'
+    data-year = '1966'
+    data-peak = '#1 for 1 week'>
       <div class='artist-name'>
         Soundtrack
       </div>
@@ -90,7 +115,10 @@
         Doctor Zhivago
       </div>
     </div>
-    <div id='nickelback' class='artist-container'>
+    <div id='nickelback' class='artist-container'
+    data-album-art = 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/AllTheRightReasons.jpg/220px-AllTheRightReasons.jpg'
+    data-year = '2005'
+    data-peak = '#1 for 1 week'>
       <div class='artist-name'>
         Nickelback
       </div>
@@ -98,7 +126,10 @@
         All the Right Reasons
       </div>
     </div>
-    <div id='carole_king' class='artist-container'>
+    <div id='carole_king' class='artist-container'
+    data-album-art = 'https://upload.wikimedia.org/wikipedia/en/5/52/Carole_King_-_Tapestry.jpg'
+    data-year = '1971'
+    data-peak = #1 for 15 weeks>
       <div class='artist-name'>
         Carole King
       </div>
@@ -109,7 +140,6 @@
 </div>
 <div class='half-width right-half blog-thumb-img'>
   <div class = 'img-container'> </div>
-  Click an album to see the album art
   <div class="blog-thumb-img-overlay">
                 <span class="overlay-link">
                     <a href="https://en.wikipedia.org/wiki/Billboard_200#Top_10_albums_of_All_Time_(1963%E2%80%932015)">Read More on These Albums Here</a>
